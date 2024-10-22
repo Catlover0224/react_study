@@ -1,5 +1,9 @@
 import "./App.css";
-import FoodContainer from "./docs/map/basic/FoodContainer";
+// import Check from "./docs/ref/Check";
+import CheckInput from "./docs/ref/CheckInput";
+// import FoodContainer from "./docs/map/basic/FoodContainer";
+// import UserContainer from "./docs/map/expert/UserContainer";
+// import Name from "./docs/ref/Name";
 // import Colors from "./docs/state/basic/Colors";
 // import Name from "./docs/state/basic/Name";
 // import Jsx03 from './docs/components/Jsx03';
@@ -14,7 +18,7 @@ function App() {
   return (
     <div>
       Hello, World!
-      <FoodContainer />
+      <CheckInput />
     </div>
   );
 }
