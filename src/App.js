@@ -1,6 +1,8 @@
 import "./App.css";
 // import Check from "./docs/ref/Check";
-import CheckInput from "./docs/ref/CheckInput";
+// import CheckInput from "./docs/ref/CheckInput";
+// import Checkbox from "./docs/ref/expert/Checkbox";
+import FoodContainer from "./docs/ref/expert/FoodContainer";
 // import FoodContainer from "./docs/map/basic/FoodContainer";
 // import UserContainer from "./docs/map/expert/UserContainer";
 // import Name from "./docs/ref/Name";
@@ -18,7 +20,7 @@ function App() {
   return (
     <div>
       Hello, World!
-      <CheckInput />
+      <FoodContainer />
     </div>
   );
 }
