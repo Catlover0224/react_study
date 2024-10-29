@@ -1,11 +1,12 @@
 import "./App.css";
-import SideEffect from "./docs/life-cycle/function/SideEffect";
+import ProductContainer from "./docs/life-cycle/function/memoization/ProductContainer";
+import Styled01 from "./pages/docs/component/Styled01";
 
 function App() {
   return (
     <div>
       Hello, World!
-      <SideEffect />
+      <Styled01 />
     </div>
   );
 }
