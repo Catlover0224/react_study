@@ -1,13 +1,14 @@
 import React from 'react';
-import { StyledButton, StyledDiv } from '../style';
+import s from '../style';
 
 const Styled01 = () => {
 
     return (
-        <StyledDiv>
+        <s.StyledDiv>
             스타일 된 컴포넌트
-            <StyledButton>냐옹</StyledButton>
-        </StyledDiv>
+            <s.Input color={"red"} />
+            <s.StyledButton fontStyle={""} backGroundColor={"blue"}>냐옹냐옹냐옹냐옹</s.StyledButton>
+        </s.StyledDiv>
     );
 };
 

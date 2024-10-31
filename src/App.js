@@ -1,12 +1,17 @@
+import { ThemeProvider } from "styled-components";
 import "./App.css";
-import ProductContainer from "./docs/life-cycle/function/memoization/ProductContainer";
-import Styled01 from "./pages/docs/component/Styled01";
+import GlobalStyle from "./global/globalStyle";
+import Styled03 from "./pages/docs/component/Styled03";
+import theme from "./global/theme";
 
 function App() {
   return (
     <div>
-      Hello, World!
-      <Styled01 />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        Hello, World!
+        <Styled03 />
+      </ThemeProvider>
     </div>
   );
 }
