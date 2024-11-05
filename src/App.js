@@ -1,8 +1,8 @@
 import { ThemeProvider } from "styled-components";
 import "./App.css";
 import GlobalStyle from "./global/globalStyle";
-import Styled03 from "./pages/docs/component/Styled03";
 import theme from "./global/theme";
+import ParentContainer from "./docs/context/normal/ParentContainer";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         Hello, World!
-        <Styled03 />
+        <ParentContainer />
       </ThemeProvider>
     </div>
   );
