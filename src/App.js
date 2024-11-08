@@ -3,6 +3,7 @@ import "./App.css";
 import GlobalStyle from "./global/globalStyle";
 import theme from "./global/theme";
 import ParentContainer from "./docs/context/normal/ParentContainer";
+import AnimalsContainer from "./docs/context/expert/AnimalsContainer";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         Hello, World!
-        <ParentContainer />
+        <AnimalsContainer />
       </ThemeProvider>
     </div>
   );
