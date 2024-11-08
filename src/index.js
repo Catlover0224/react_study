@@ -4,11 +4,22 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// redux 코드 추가
+import { legacy_createStore as createStore } from 'redux';
+import { Provider } from 'react-redux';
+import { devToolsEnhancer } from '@redux-devtools/extension';
+//import count from './modules/count';
+import font from './modules/font';
+
+// 스토어
+//const store = createStore(count, devToolsEnhancer());
+const store = createStore(font, devToolsEnhancer());
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <>
+  <Provider store={store}>
     <App />
-  </>
+  </Provider>
 );
 
 // If you want to start measuring performance in your app, pass a function
