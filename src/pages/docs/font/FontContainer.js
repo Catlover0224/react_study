@@ -4,7 +4,7 @@ import FontInputComponent from "./FontInputComponent";
 import { useSelector } from "react-redux";
 
 const FontContainer = () => {
-  const fontSize = useSelector((state) => state.fontSize);
+  const fontSize = useSelector((state) => state.font.fontSize);
   console.log("🚀 ~ FontContainer ~ fontSize:", fontSize);
 
   return (

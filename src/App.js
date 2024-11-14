@@ -2,15 +2,15 @@ import { ThemeProvider } from "styled-components";
 import "./App.css";
 import GlobalStyle from "./global/globalStyle";
 import theme from "./global/theme";
-import FontContainer from "./pages/docs/font/FontContainer";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/router";
 
 function App() {
   return (
     <div>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        Hello, World!
-        <FontContainer/>
+        <RouterProvider router={router}/>
       </ThemeProvider>
     </div>
   );
